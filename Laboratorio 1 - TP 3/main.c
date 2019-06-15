@@ -75,37 +75,92 @@ int main()
             }
             case 3:
             {
-                controller_addEmployee(listaEmpleados);
+                if(binario || texto)
+                {
+                    controller_addEmployee(listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
                 break;
             }
             case 4:
             {
-                controller_editEmployee(listaEmpleados);
+                if(binario || texto)
+                {
+                    controller_editEmployee(listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
+
                 break;
             }
             case 5:
             {
-                controller_removeEmployee(listaEmpleados);
+                if(binario || texto)
+                {
+                    controller_removeEmployee(listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
+
                 break;
             }
             case 6:
             {
-                controller_ListEmployee(listaEmpleados);
+                if(binario || texto)
+                {
+                    controller_ListEmployee(listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
+
                 break;
             }
             case 7:
             {
-                controller_sortEmployee(listaEmpleados);
+                if(binario || texto)
+                {
+                    controller_sortEmployee(listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
+
                 break;
             }
             case 8:
             {
-                controller_saveAsText("data.csv" , listaEmpleados);
+                if(binario || texto)
+                {
+               controller_saveAsText("data.csv" , listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
+
                 break;
             }
             case 9:
             {
+                if(binario || texto)
+                {
                 controller_saveAsBinary("data.csv" , listaEmpleados);
+                }
+                else
+                {
+                    printf("Primero abra el archivo.");
+                }
+
                 break;
             }
         }

@@ -100,3 +100,42 @@
 
 1560562015 c:\users\a\desktop\tp3\win_64\validaciones.h
 
+1560564208 source:c:\users\a\desktop\laboratorio 1 - tp 3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"parser.h"
+	"LinkedList.h"
+	"Employee.h"
+	"validaciones.h"
+
+1560465152 c:\users\a\desktop\laboratorio 1 - tp 3\parser.h
+	"LinkedList.h"
+
+1533133022 c:\users\a\desktop\laboratorio 1 - tp 3\linkedlist.h
+
+1560464999 c:\users\a\desktop\laboratorio 1 - tp 3\employee.h
+
+1560562015 c:\users\a\desktop\laboratorio 1 - tp 3\validaciones.h
+
+1560483054 source:c:\users\a\desktop\laboratorio 1 - tp 3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1533133022 c:\users\a\desktop\laboratorio 1 - tp 3\controller.h
+
+1560451782 source:c:\users\a\desktop\laboratorio 1 - tp 3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1560562015 source:c:\users\a\desktop\laboratorio 1 - tp 3\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
