@@ -18,6 +18,15 @@
 
 #ifndef __LINKEDLIST
 #define __LINKEDLIST
+typedef struct
+{
+    int id;
+    char especie[50];
+    char raza[50];
+    char nombre[50];
+    char duenio[50];
+}eVet;
+
 struct Node
 {
     void* pElement;                 //puntero al elemento (persona, empleado, etc.)
