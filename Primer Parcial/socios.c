@@ -10,7 +10,7 @@ void listaAutor(eAutor autor[], int cantidad)
 {
     int i;
     int j;
-    char aux[31];
+    eAutor autorAux;
 
     printf("Codigo de Autor ||  Apellido  ||  Nombre \n");
 
@@ -18,19 +18,19 @@ void listaAutor(eAutor autor[], int cantidad)
     {
         for(j=i+1;j<cantidad;j++)
 
-        if(strcmp(autor[i].apellido,autor[j].apellido)>1)
+        if(strcmp(autor[i].apellido,autor[j].apellido)>0)
         {
-            strcpy(aux,autor[i].apellido);
-            strcpy(autor[i].apellido,autor[j].apellido);
-            strcpy(autor[j].apellido,aux);
+            autorAux = autor[i];
+            autor[i] = autor[j]
+            autor[j] = autorAux
         }
         else if(strcmp(autor[i].apellido,autor[j].apellido) == 0)
         {
             if(strcmp(autor[i].nombre,autor[j].nombre)>1)
             {
-                strcpy(aux,autor[i].nombre);
-                strcpy(autor[i].nombre,autor[j].nombre);
-                strcpy(autor[j].nombre,aux);
+                autorAux = autor[i];
+                autor[i] = autor[j]
+                autor[j] = autorAux
             }
 
         }
@@ -45,7 +45,7 @@ void listaLibro(eLibro libro[], int cantidad)
 {
     int i;
     int j;
-    char aux[31];
+    eLibro libroAux;
 
     printf("Codigo de Libro ||  Titulo  ||  Codigo de Autor \n");
 
@@ -55,9 +55,9 @@ void listaLibro(eLibro libro[], int cantidad)
 
         if(strcmp(libro[i].titulo,libro[j].titulo)>1)
         {
-            strcpy(aux,libro[i].titulo);
-            strcpy(libro[i].titulo,libro[j].titulo);
-            strcpy(libro[j].titulo,aux);
+            libroAux=libro[i];
+            libro[i]=libro[j];
+            libro[j]=libroAux;
         }
 
     }
@@ -98,10 +98,10 @@ void altaPrestamo(eLibro libro[], eSocio socio[], ePrestamo prestamo[], int cant
         {
             prestamo[i].codPrestamo++;
 
-            printf("Ingrese el código del libro: \n");
+            printf("Ingrese el cÃ³digo del libro: \n");
             scanf("%d",&prestamo[i].codPrestamoLibro);
 
-            printf("Ingrese el código del socio: \n");
+            printf("Ingrese el cÃ³digo del socio: \n");
             scanf("%d",&prestamo[i].codPrestamoSocio);
 
             printf("intruduzca el dia: \n");
@@ -280,12 +280,12 @@ void alta(eSocio socio[],int cantidad)
 
             socio[i].isEmpty = 0;
 
-            printf("¿Desea continuar? s/n");
+            printf("Â¿Desea continuar? s/n");
             scanf("%c",&salir);
 
             while(salir != 's' && salir != 'n' && salir != 'N' && salir != 'S')
             {
-                printf("¿Desea continuar? s/n \n");
+                printf("Â¿Desea continuar? s/n \n");
                 scanf("%c",&salir);
             }
 
@@ -387,7 +387,7 @@ void modSocio(eSocio socio[],int cantidad)
         }
         else
         {
-            printf("No se encontró el socio solicitado.\n");
+            printf("No se encontrÃ³ el socio solicitado.\n");
             break;
         }
 
