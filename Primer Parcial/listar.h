@@ -1,0 +1,11 @@
+void seleccionInformes(ePrestamo prestamo[], eSocio socio[], eLibro libro[], eAutor autor[], int cantidadSocios, int cantidadPrestamos, int cantidadLibros, int cantidadAutores);
+int informeTotal(eSocio socio[],int cantidadPrestamo);
+void informeDias(eSocio socio[], int cantidadPrestamo);
+void libroDeterminado(eSocio socio[], int codigo, ePrestamo prestamo[], int cantidadPrestamo, int cantidad);
+void socioDeterminado(eLibro libro[], int codigo, ePrestamo prestamo[], int cantidadPrestamo, int cantidadLibro);
+void listarLibroMenos(eLibro libro[], int cantidadPrestamo, int cantidadLibro, ePrestamo prestamo[]);
+void listarSocioMas(eSocio socio[], int cantidad, int cantidadPrestamo, ePrestamo prestamo[]);
+void prestamoFechaLibro(ePrestamo prestamo[], eFecha fecha, int cantidadPrestamo, int cantidadLibro, eLibro libro[]);
+void prestamoFechaSocio(ePrestamo prestamo[], eFecha fecha, int cantidad, int cantidadPrestamo, eSocio socio[]);
+void titulosDescenciente (eLibro libro[], int cantidadLibro);
+void apellidoAscendiente(eSocio socio[],int cantidad);

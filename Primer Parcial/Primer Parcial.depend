@@ -1,0 +1,110 @@
+# depslib dependency file v1.0
+1557187819 source:d:\cosas\primer parcial\autores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autores.h"
+
+1557188108 source:d:\cosas\primer parcial\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libros.h"
+
+1557188792 source:d:\cosas\primer parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"prestamos.h"
+
+1557189329 source:d:\cosas\primer parcial\prestamos.c
+	<stdio.h>
+	<stdlib.h>
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"prestamos.h"
+
+1557187156 source:d:\cosas\primer parcial\socios.c
+	<stdio.h>
+	<stdlib.h>
+	"socios.h"
+	"Fecha.h"
+	<string.h>
+
+1557185505 source:d:\cosas\primer parcial\fecha.c
+
+1557186641 d:\cosas\primer parcial\socios.h
+
+1557185686 d:\cosas\primer parcial\fecha.h
+
+1557187390 d:\cosas\primer parcial\autores.h
+
+1557187961 d:\cosas\primer parcial\libros.h
+
+1557188811 d:\cosas\primer parcial\prestamos.h
+
+1561332058 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\autores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socios.h"
+
+1561332058 c:\users\a\desktop\parcial\primer parcial\primer parcial\autores.h
+
+1557185506 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\fecha.c
+
+1561332058 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libros.h"
+
+1561332096 c:\users\a\desktop\parcial\primer parcial\primer parcial\libros.h
+
+1561375340 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"socios.h"
+	"listar.h"
+
+1561376539 c:\users\a\desktop\parcial\primer parcial\primer parcial\socios.h
+
+1561332093 c:\users\a\desktop\parcial\primer parcial\primer parcial\prestamos.h
+
+1561332082 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\prestamos.c
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"socios.h"
+	"autores.h"
+	"libros.h"
+
+1561376651 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\socios.c
+	<stdio.h>
+	<stdlib.h>
+	"socios.h"
+	"validaciones.h"
+	<string.h>
+	<ctype.h>
+
+1557185688 c:\users\a\desktop\parcial\primer parcial\primer parcial\fecha.h
+
+1561318017 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1557259823 c:\users\a\desktop\parcial\primer parcial\primer parcial\validaciones.h
+
+1561377615 source:c:\users\a\desktop\parcial\primer parcial\primer parcial\listar.c
+	<stdio.h>
+	<stdlib.h>
+	"socios.h"
+	<string.h>
+	<ctype.h>
+
+1561377600 c:\users\a\desktop\parcial\primer parcial\primer parcial\listar.h
+
