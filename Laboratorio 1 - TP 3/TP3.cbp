@@ -35,15 +35,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Controller.c">
+		<Unit filename="LinkedList.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Controller.h" />
-		<Unit filename="Employee.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Employee.h" />
 		<Unit filename="LinkedList.h" />
+		<Unit filename="Llamada.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Llamada.h" />
 		<Unit filename="data.csv" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
@@ -52,10 +51,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="parser.h" />
-		<Unit filename="validaciones.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="validaciones.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

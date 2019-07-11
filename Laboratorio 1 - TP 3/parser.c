@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "LinkedList.h"
-#include "Employee.h"
+#include "Llamada.h"
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
  *
@@ -10,21 +10,22 @@
  * \return int
  *
  */
-int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+int parser_EmployeeFromText(FILE* pFile , LinkedList* llamadas)
 {
 
-
+    char llamada[4];
+    char fecha[10]
+    char cliente[9];
+    char problema;
+    char solucion[2];
     int cantidad = 0;
-    char idStr[6];
-    char nombreStr[20];
-    char horasTrabajadasStr[6];
-    char sueldoStr[6];
+
 
     if(pFile != NULL)
     {
         while(!feof(pFile))
         {
-            cantidad = fscanf(pFile,"%[^,],%[^,],%[^,],%[^,\n]\n", idStr, nombreStr, horasTrabajadasStr, sueldoStr);
+            cantidad = fscanf(pFile,"%[^,],%[^,]%[^,],%[^,],%[^,\n]\n", llamada, fecha, cliente,problema,solucion);
             if(cantidad != 4)
             {
                 printf("Error en la carga\n\n");
@@ -32,61 +33,20 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
             }
             else
             {
-                Employee* empleado = employee_new();
-                empleado->id = atoi(idStr);
-                strcpy(empleado->nombre, nombreStr);
-                empleado->horasTrabajadas = atoi(horasTrabajadasStr);
-                empleado->sueldo = atoi(sueldoStr);
-                ll_add(pArrayListEmployee, empleado);
-            }
-        }
+                eLLamada* llamada = llamada_new();
+                ll_add(llamadas,llamada);
+                llamada.id_Llamada = atoi(llamada));
+                strcpy(llamada.fecha,fecha);
+                llamada.numero_Cliente = atoi(cliente);
+                llamada.id_Problema = atoi(problema);
+                strcpy(llamada.solucionado,solucion);
+             }
     fclose(pFile);
     return 1;
     }
     else
     {
         printf("No hay archivo.\n");
-        system("pause");
-        return 0;
-    }
-
-}
-
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
-int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
-{
-
-
-    if(pFile != NULL)
-    {
-        int cantidad;
-
-        while(!feof(pFile))
-        {
-
-                Employee* empleado = employee_new();
-                cantidad = fread(empleado, sizeof(Employee),1,pFile);
-                if(cantidad != 1)
-                {
-                    printf("Error en la carga.\n");
-                }
-                else
-                {
-                    ll_add(pArrayListEmployee, empleado);
-                }
-        }
-    fclose(pFile);
-    return 1;
-    }
-    else
-    {
-        printf("No hay archivo\n");
         system("pause");
         return 0;
     }

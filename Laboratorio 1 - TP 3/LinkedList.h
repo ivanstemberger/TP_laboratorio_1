@@ -20,8 +20,8 @@
 #define __LINKEDLIST
 struct Node
 {
-    void* pElement;
-    struct Node* pNextNode;
+    void* pElement;                 //puntero al elemento (persona, empleado, etc.)
+    struct Node* pNextNode;         //puntero al prox nodo
 }typedef Node;
 
 struct LinkedList
@@ -53,3 +53,4 @@ int ll_containsAll(LinkedList* this,LinkedList* this2);
 LinkedList* ll_subList(LinkedList* this,int from,int to);
 LinkedList* ll_clone(LinkedList* this);
 int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
+LinkedList* ll_filter(LinkedList* this, int(*fn)(void* element);
