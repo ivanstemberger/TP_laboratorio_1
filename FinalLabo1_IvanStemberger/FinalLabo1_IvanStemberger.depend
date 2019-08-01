@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1514140574 source:d:\finallabo1_ivanstemberger\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1564703372 source:c:\users\alumno\desktop\finallabo1_ivanstemberger\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"partida.h"
+	"parser.h"
+
+1564703297 source:c:\users\alumno\desktop\finallabo1_ivanstemberger\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1564703285 c:\users\alumno\desktop\finallabo1_ivanstemberger\linkedlist.h
+
+1564703285 source:c:\users\alumno\desktop\finallabo1_ivanstemberger\partida.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"partida.h"
+
+1564703285 c:\users\alumno\desktop\finallabo1_ivanstemberger\partida.h
+
+1564702461 source:c:\users\alumno\desktop\finallabo1_ivanstemberger\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"partida.h"
+
+1564699574 c:\users\alumno\desktop\finallabo1_ivanstemberger\parser.h
+	"LinkedList.h"
+
